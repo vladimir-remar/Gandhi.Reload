@@ -1,0 +1,13 @@
+$TTL 86400
+@   IN  SOA   gandhi.reload. root.gandhi.reload. (
+        2017121701  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+        IN  NS     gandhi.reload.
+        IN  A       192.168.2.57
+ldap    IN  A       192.168.2.57
+krb     IN  A       192.168.2.57
+nfs     IN  A       192.168.2.57

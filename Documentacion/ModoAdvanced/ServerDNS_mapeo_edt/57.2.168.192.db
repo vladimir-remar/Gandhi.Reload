@@ -1,0 +1,16 @@
+$TTL 86400
+@   IN  SOA     gandhi.reload. root.gandhi.reload. (
+        2017121701  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+        IN  NS      gandhi.reload.
+
+        IN  PTR     gandhi.reload.
+        IN  A       255.255.255.0
+
+57      IN  PTR    ldap.gandhi.reload.
+57     IN  PTR    nfs.gandhi.reload.
+57     IN PTR     krb.gandhi.reload.
