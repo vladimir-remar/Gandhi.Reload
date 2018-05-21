@@ -78,12 +78,11 @@ Como extra crearemos algunos servicios kerberizados, tales como:
 - FTP kerberized server
 - HTTP kerberized server
 
-Y para acabar también montaremos un servidor de TFTP
-
 Todo el seguimiento  en el desarrollo de los [servicios](https://gitlab.com/vladimir-remar/Gandhi.Reload/tree/master/Documentacion/ServiciosKerberizados)
 
 ## Servidor PXE 
 
-Un servidor PXE elemental. 
+Conjuntamente con el servidor de dhcp se configurara un servidor TFTP para
+luego desarrollar un [servidor PXE](https://gitlab.com/vladimir-remar/Gandhi.Reload/tree/master/Documentacion/ServerPXE)
 
 [Página de inicio](https://gitlab.com/vladimir-remar/Gandhi.Reload/tree/master)

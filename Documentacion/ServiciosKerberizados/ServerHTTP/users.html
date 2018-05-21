@@ -1,0 +1,80 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"
+	xmlns:py="http://genshi.edgewall.org/">
+  <head>
+    <title>Formularis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <style type="text/css">
+		p {
+			font-weight: bold;
+			font-size: xx-large;
+			font-style: italic;
+	    }
+		 
+		 body {
+			 background-color: white;
+			 background-image: url("https://img.freepik.com/free-vector/user-avatars-pack_23-2147502629.jpg");
+			 background-repeat: no-repeat;
+			 background-position: 50% -1%;
+		 }
+		 span {
+			 font-weight: bold;
+			 color: red;
+		}
+	 </style>
+  </head>
+  <body py:attrs="color">
+   <p>introuiex usuaris</p>
+   <form action="../cgi-bin/users" method="get">
+		<table>
+		   <tr>
+			   <th><label for="name">Nom:</label></th>
+				<td><input type="text" id="name" name="name" py:attrs="cn"/><span py:if="valid_name"> *</span></td>
+		   </tr>
+		   <tr>
+			   <th><label for="homephone">Telefon:</label></th>
+				<td><input type="text" id="homephone" name="homephone" py:attrs="homephone"/><span py:if="valid_homephone"> *</span></td>
+		   </tr>
+		   
+		   <tr>
+			   <th><label for="mail">mail electronic:</label></th>
+				<td><input type="text" id="mail" name="mail" py:attrs="mail"/><span py:if="valid_mail"> *</span></td>
+		   </tr>
+		 
+			<tr>
+			   <th><label for="description">description electronic:</label></th>
+				<td><input type="text" id="description" name="description" py:attrs="description"/><span py:if="valid_description"> *</span></td>
+		   </tr>
+		   
+		    <tr>
+			   <th><label for="group">cicle:</label></th>
+				<td><select name="groups">
+				  <option value="1asix" py:attrs="group">1asix</option>
+				  <option value="2asix" py:attrs="group">2asix</option>
+				  <option value="1wiaw" py:attrs="group">1wiaw</option>
+				  <option value="2wiaw" py:attrs="group">2wiaw</option>
+				</select>
+			  </td>
+		   </tr>
+		   
+		   <tr>
+			<td><input type="submit" value="Enviar"/></td>
+			<td><input type="reset" value="Reestablir"/></td>
+		   </tr>
+       </table>
+       <div py:if="valid_name">
+		<span>Error, el camp nom no pot estar buit</span>
+      </div>
+      <div py:if="valid_mail">
+		<span>Error, el camp mail no pot estar buit</span>
+      </div>
+      <div py:if="valid_homephone">
+		<span>Error, el camp telefon no pot estar buit</span>
+      </div>
+   </form>
+  </body>
+</html>

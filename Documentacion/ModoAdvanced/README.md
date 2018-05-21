@@ -11,3 +11,6 @@ ofrece. Para eso daremos a esta:
 
 Para situarte puedes seguir el [planteamiento](https://gitlab.com/vladimir-remar/Gandhi.Reload/blob/master/Documentacion/ModoAdvanced/desarrollo_modo_advanced.md) paso a paso o seguir mi [docker-compose](https://gitlab.com/vladimir-remar/Gandhi.Reload/blob/master/docker-compose.yml)
 teniendo en cuenta que:
+
+- El servidor de DHCP hay que iniciar el servicio después de iniciar el 
+resto de contenedores, en nuestro caso se hará mediante [script](https://gitlab.com/vladimir-remar/Gandhi.Reload/blob/master/start-dockers.sh).

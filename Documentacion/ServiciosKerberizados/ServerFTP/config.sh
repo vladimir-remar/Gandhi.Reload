@@ -8,11 +8,13 @@ rm -rf /etc/pam.d/vsftpd
 cp vsftpd-ldap /etc/pam.d/vsftpd
 
 
-sed -i 's/listen=NO/listen=YES/; s/listen_ipv6=YES/listen_ipv6=NO/' /etc/vsftpd/vsftpd.conf
-echo "background=No">>/etc/vsftpd/vsftpd.conf
-echo "pasv_enable=YES"  >>/etc/vsftpd/vsftpd.conf
-echo "pasv_min_port=50000" >>/etc/vsftpd/vsftpd.conf
-echo "pasv_max_port=50050" >>/etc/vsftpd/vsftpd.conf
+#sed -i 's/listen=NO/listen=YES/; s/listen_ipv6=YES/listen_ipv6=NO/' /etc/vsftpd/vsftpd.conf
+echo "background=NO">>/etc/vsftpd/vsftpd.conf 
+echo "pasv_enable=NO"  >>/etc/vsftpd/vsftpd.conf
+# Descomenta si quieres hacer funcionar la opcion pasiva del servidor
+# y Cambia el pasv_enable=NO por pasv_enable=YES
+#echo "pasv_min_port=50000" >>/etc/vsftpd/vsftpd.conf
+#echo "pasv_max_port=50050" >>/etc/vsftpd/vsftpd.conf
 echo "port_enable=YES" >>/etc/vsftpd/vsftpd.conf
 
 # Users "locals" sense password
@@ -39,4 +41,5 @@ cp system-auth.new /etc/pam.d/system-auth
 sed -i -r 's/(<.*.Volume definitions.*.)/\1\n\t\t<volume fstype="nfs" server="nfs.gandhi.reload" mountpoint="~" path="\/mnt\/dades\/%(GROUP)\/%(USER)" \/>/' /etc/security/pam_mount.conf.xml
 mkdir -p /home/users/inf
 chmod 777 /home/users/inf
-#mount -t nfs nfs.gandhi.reload:/mnt/dades /home/users/inf
+cp config.tar.gz /var/ftp/pub/config.tar.gz && echo "okcp"
+chmod -R 777 /var/ftp/

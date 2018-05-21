@@ -14,7 +14,7 @@ interfaz donde va a estar la red externa.
 
 - Creación del docker:
 
-		docker run --name dhcp.gandhi.reload -h dhcp.gandhi.reload --network=host --privileged=True --volumes-from gadmin.gandhi.reload -it gandhireload_dhcp
+		docker run --name dhcp.gandhi.reload -h dhcp.gandhi.reload --network=host --privileged=True --volumes-from gadmin.gandhi.reload -v tftp:/var/lib/tftpboot -it gandhireload_dhcp
 
 Debido a la configuracion interna de docker los docker creados con la 
 ***network: host*** no pueden ser lanzados en modo deattach por ello
@@ -37,12 +37,7 @@ dhclient -v -s 10.10.0.1
 En el caso de que hayamos creado un docker perteneciente a la red interna
 gandhi.reload podemos intentar darle una interficie de red.
 
-La solución o una de ellas seria poder asginar una interficie física/virtual
-de red que tenga el host anfitrión que hace de router a un docker que 
-pertenezca a la red interna de gandhi.reload, se puede mapear una 
-interificie a un docker pero lo hace a partir de una vlan, no 
-significaria un problema si no fuese por el eccesivo tiempo que toma en 
-resolver una ip.
+La solución o una de ellas seria poder asginar una interficie física/virtual de red que tenga el host anfitrión que hace de router a un docker que  pertenezca a la red interna de gandhi.reload, se puede mapear una  interificie a un docker pero lo hace a partir de una vlan, no  significaria un problema si no fuese por el eccesivo tiempo que toma en resolver una ip.
 
 ### Aquí la manera:
 

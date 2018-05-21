@@ -6,14 +6,15 @@ objectclass: posixAccount
 objectclass: inetOrgPerson
 cn: %s
 sn: %s
-homephone: %s 
+homephone: %s
 mail: %s
 description: %s
 ou: %s
 uid: %s
-uidNumber: %s  
+uidNumber: %s
 gidNumber: %s
-homeDirectory: /home/users/%s 
+homeDirectory: /home/users/inf/%s/%s
+loginShell: /bin/bash
 userPassword: %s
 '''
 
@@ -26,3 +27,5 @@ changetype:modify
 add:memberUid'''
 
 	return ldap_grups
+
+homeDirectory

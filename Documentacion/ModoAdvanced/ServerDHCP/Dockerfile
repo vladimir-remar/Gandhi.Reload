@@ -1,7 +1,7 @@
 # Version: 0.0.1
 FROM fedora:24
 
-RUN dnf -y install dhcp iputils iproute net-tools
+RUN dnf -y install dhcp iputils iproute net-tools tftp-server syslinux wget
 RUN mkdir /opt/docker
 COPY * /opt/docker/
 WORKDIR /opt/docker/

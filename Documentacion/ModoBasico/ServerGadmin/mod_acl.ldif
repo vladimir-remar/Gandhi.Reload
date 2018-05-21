@@ -1,0 +1,13 @@
+dn: olcDatabase={1}hdb,cn=config
+changetype: modify
+delete: olcAccess
+-
+add: olcAccess
+olcAccess: to attrs=homephone,userPassword,mail
+  by self write
+  by anonymous auth
+  by users none
+-
+add: olcAccess
+olcAccess: to * by self write
+  by * read

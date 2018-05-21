@@ -121,3 +121,5 @@ Se configura un cliente real al cual se le configura:
 - /etc/hosts
 
 Volver al [planteamiento](https://gitlab.com/vladimir-remar/Gandhi.Reload/blob/master/Documentacion/Planing_proyecto.md)
+
+Ir a servicios [kerberizados](https://gitlab.com/vladimir-remar/Gandhi.Reload/tree/master/Documentacion/ServiciosKerberizados).

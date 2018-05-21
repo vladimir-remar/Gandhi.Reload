@@ -1,20 +1,20 @@
 [
- {"cn": "ho chi minh",
- "homephone": "777-222-0002",
- "mail": "ho@asia.gandhi.reload",
- "description" : "client de vietnam",
+ {"cn": "renzo alberto remar",
+ "homephone": "777-223-0002",
+ "mail": "renzo@asia.gandhi.reload",
+ "description" : "client de casa",
  "ou" : "1wiaw"
  },
- {"cn": "vladimir remar",
- "homephone": "777-222-0002",
- "mail": "ho@asia.gandhi.reload",
- "description" : "client de vietnam",
- "ou" : "1wiaw"
+ {"cn": "vladimir remar silva",
+ "homephone": "777-222-0004",
+ "mail": "vladimir@agandhi.reload",
+ "description" : "delincuente",
+ "ou" : "2wiaw"
  },
-  {"cn": "te remar",
- "homephone": "777-222-0002",
- "mail": "ho@asia.gandhi.reload",
- "description" : "client de vietnam",
+  {"cn": "martina pascual llorens",
+ "homephone": "777-222-0001",
+ "mail": "martina@asia.gandhi.reload",
+ "description" : "alumne",
  "ou" : "1asix"
  }
 ]

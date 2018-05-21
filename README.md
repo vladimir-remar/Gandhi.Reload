@@ -9,9 +9,10 @@
 
 ## Proposito general
 
-El objetivo de este proyecto es generar un modelo similar a los servicios 
-que brinda el servidor de  ***Gandhi*** en la escuela pero con cada uno 
-de los servicios separados en contenedores Docker. 
+El objetivo de este proyecto es generar un modelo de acceso a servicios 
+similar a los que brinda el servidor de  ***Gandhi*** en la escuela pero 
+con cada uno de los estos separados en contenedores Docker.
+ 
 
 ## Implementaciones:
 

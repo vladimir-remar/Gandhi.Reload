@@ -1,0 +1,120 @@
+#!/usr/bin/python
+# encoding: UTF-8
+# python cgi to save users in a json file
+# Vladimir remar
+# Gandhi Reload - 2018
+########################################################################
+
+import os, sys
+import json
+
+write = sys.stdout.write
+PATH  = "/var/tmp/users.json" #PATH to file json
+
+########################################################################
+# Definition of functions
+########################################################################
+
+def my_decode(s):
+	"""
+	Descodifica el caracters provinents de Query Strings.
+	"""
+	R = s.replace('+',' ')
+	query = ""
+	i = 0
+	while i < len(R):
+		char = R[i]
+		if char != '%':
+			query += char
+			i += 1
+		else:
+			h = R[i+1:i+3]
+			char = chr(int(h,base=16))
+			query += char
+			i += 3
+	return query
+
+def parse(s):
+    """
+    Parse the url-encoded string s returning a dictionary.
+		Caveat: does not support duplicate keys, etc.
+    """
+    if s == "": return {}
+    pairs = s.split("&")
+    
+    # We verify that there is no empty string and contain '='
+    for pair in pairs:
+		if '=' not in pair:
+			raise ValueError('Bad query string')
+			
+	# We generate tuples list (to accept repeated keys)
+    pairs = [(k, my_decode(v))
+              for (k, v) in [s.split("=", 1) for s in pairs]]
+              
+    return pairs
+
+def build_entry(tuples):
+		"""Build a valid entry for jsaon file"""
+		global _entry
+
+		_entry = {}
+		_entry['cn']       	  = tuples[0][1]
+		_entry['homephone']   = tuples[1][1]
+		_entry['mail']        = tuples[2][1]
+		_entry['description'] = tuples[3][1]
+		_entry['ou']          = tuples[4][1]
+
+def append_to_json(_entry,PATH): 
+	  """ Write a new entry into file"""
+	  with open(PATH, 'a+') as f:
+	   
+	    f.seek(0,2)              #Go to the end of file    
+	   
+	    if f.tell() == 0 :       #Check if file is empty
+	      json.dump([_entry], f)  #If empty, write an array
+	   
+	    else :
+	   
+	      f.seek(-1,2)           
+	      f.truncate()           #Remove the last character, open the array
+	      f.write(' , ')         #Write the separator
+	      json.dump(_entry,f)     #Dump the dictionary
+	      f.write(']')           #Close the array
+	  
+	  f.close()
+  
+########################################################################
+# calculation and definitions of variables
+########################################################################
+
+# we define the environment variables if we want to treat the post method
+entorn = {
+	'name':{'value':''},
+	'mail':{'value':'Insertar correu'},
+	'homephone':{'value':''},
+	'group':{'value':''},
+	'valid_name':False,
+	'valid_correu':False,
+	'valid_telefon':False
+}
+
+# change the host to own web server
+URL = "http://192.168.1.38/admin-homes/users.html"
+
+########################################################################
+# Processing request
+########################################################################
+
+if os.environ['REQUEST_METHOD'] == 'GET':
+	# if we wait for a query string (you need to have the parse function)
+	form = parse(os.environ['QUERY_STRING'])
+	build_entry(form)
+	append_to_json(_entry,PATH)
+
+########################################################################
+# Headers
+########################################################################	
+write("Location: %s\r\n" % (URL))
+write('\r\n')
+
+sys.exit(0)

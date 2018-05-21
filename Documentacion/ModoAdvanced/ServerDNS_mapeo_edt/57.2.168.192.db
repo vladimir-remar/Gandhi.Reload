@@ -14,3 +14,7 @@ $TTL 86400
 57      IN  PTR    ldap.gandhi.reload.
 57     IN  PTR    nfs.gandhi.reload.
 57     IN PTR     krb.gandhi.reload.
+57      IN PTR      ftpserver.gandhi.reload.
+57      IN PTR      tftpserver.gandhi.reload.
+57      IN PTR      httpserver.gandhi.reload.
+57      IN PTR      sshserver.gandhi.reload.

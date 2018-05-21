@@ -11,3 +11,8 @@ $TTL 86400
 ldap    IN  A       192.168.2.57
 krb     IN  A       192.168.2.57
 nfs     IN  A       192.168.2.57
+sshserver  IN  A      192.168.2.57
+ftpserver  IN  A      192.168.2.57
+tftpserver  IN  A      192.168.2.57
+httpserver  IN  A      192.168.2.57
+www                     IN      A   80.58.61.254

@@ -70,11 +70,10 @@ Posibles respuestas al problema:
 
 Posible solución
 
-La solución que planteo no es ni de lejos la adeacua pero nos solventa
+La solución que planteo no es ni de lejos la adecuada pero nos soluciona
 el problema.
 
 En el servidor de FTP hacemos que monte los homes de nuestros usuarios
-
 
 		mount -t nfs nfs.gandhi.reload:/mnt/dades /home/users/inf
 

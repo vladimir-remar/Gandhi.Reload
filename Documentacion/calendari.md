@@ -21,19 +21,19 @@
 
 | Horas / Dias   | 07            | 08           | 09            | 10            |    11 | 
 | -------------- |:-------------:| ------------:| ------------- |:-------------:| -----:|
-| 09:00-0:00     |    Puesta en marcha cliente *real*           |     Finalización modo Advanced         |      Desarrollo ssh kerberized         |      Desarrollo tftp server         |       |
-| 10:00-11:00    |    Puesta en marcha cliente *real*           |  Finalización modo Advanced            |        Desarrollo ssh kerberized       |       Desarrollo ftp kerberized server		|       |
-| 11:00-12:00    |    Puesta en marcha cliente *real*           |   Desarrollo Servicios Kerberizados           |        Desarrollo http kerberized       |      Desarrollo ftp kerberized server 		|       |
-| 12:00-13:00    |    Resolución de problemas con los servidores           |     Desarrollo Servicios Kerberizados         |     Desarrollo http kerberized          | Desarrollo ftp kerberized server      		|       |
+| 09:00-0:00     |    Puesta en marcha cliente *real*           |     Finalización modo Advanced         |      Desarrollo ssh kerberized         |      Desarrollo tftp server         |   Restructuración DHCP server + tftp    |
+| 10:00-11:00    |    Puesta en marcha cliente *real*           |  Finalización modo Advanced            |        Desarrollo ssh kerberized       |       Desarrollo ftp kerberized server		|   Restructuración DHCP server + tftp    |
+| 11:00-12:00    |    Puesta en marcha cliente *real*           |   Desarrollo Servicios Kerberizados           |        Desarrollo http kerberized       |      Desarrollo ftp kerberized server 		|    Restructuración DHCP server + tftp   |
+| 12:00-13:00    |    Resolución de problemas con los servidores           |     Desarrollo Servicios Kerberizados         |     Desarrollo http kerberized          | Desarrollo ftp kerberized server      		|    Restructuración DHCP server + tftp   |
 
 ### Semana 4: 14 de mayo - 18 de mayo
 
 | Horas / Dias   | 14           | 15           | 16            | 17            |    18 | 
 | -------------- |:-------------:| ------------:| ------------- |:-------------:| -----:|
-| 09:00-0:00     |               |              |               |               |       |
-| 10:00-11:00    |               |              |               |       		|       |
-| 11:00-12:00    |               |              |               |       		|       |
-| 12:00-13:00    |               |              |               |       		|       |
+| 09:00-0:00     |          Test servers     |   Test servers           |  Test clients             |     Test client           |  Resolución problemas     |
+| 10:00-11:00    |      Test servers         |    Test servers          |  Test clients             |  Test client      		|     Resolución problemas  |
+| 11:00-12:00    |    Test servers           |   Test servers           |  Test clients             |     Resolución problemas  		|    Resolución problemas   |
+| 12:00-13:00    |      Test servers         |     Test servers         |    Test clients           |      Resolución problemas 		| Resolución problemas      |
 
 
 [Página principal](https://gitlab.com/vladimir-remar/Gandhi.Reload/tree/master)

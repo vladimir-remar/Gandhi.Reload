@@ -94,6 +94,7 @@ uid: pau
 uidNumber: 5000
 gidNumber: 100
 homeDirectory: /home/users/inf/profes/pau
+loginShell: /bin/bash
 userPassword: {SSHA}NDkipesNQqTFDgGJfyraLz/csZAIlk2/
 
 dn: uid=pere,ou=usuaris,dc=gandhi,dc=reload
@@ -109,6 +110,7 @@ uid: pere
 uidNumber: 5001
 gidNumber: 100
 homeDirectory: /home/users/inf/profes/pere
+loginShell: /bin/bash
 userPassword: {SSHA}ghmtRL11YtXoUhIP7z6f7nb8RCNadFe+
 
 dn: uid=anna,ou=usuaris,dc=gandhi,dc=reload
@@ -125,6 +127,7 @@ uid: anna
 uidNumber: 5002
 gidNumber: 600
 homeDirectory: /home/users/inf/anna
+loginShell: /bin/bash
 userPassword: {SSHA}Bm4B3Bu/fuH6Bby9lgxfFAwLYrK0RbOq
 
 dn: uid=marta,ou=usuaris,dc=gandhi,dc=reload
@@ -140,6 +143,7 @@ uid: marta
 uidNumber: 5003
 gidNumber: 600
 homeDirectory: /home/users/inf/marta
+loginShell: /bin/bash
 userPassword: {SSHA}9+1F2f5vcW8z/tmSzYNWdlz5GbDCyoOw
 
 dn: uid=jordi,ou=usuaris,dc=gandhi,dc=reload
@@ -157,6 +161,7 @@ uid: jordi
 uidNumber: 5004
 gidNumber: 100
 homeDirectory: /home/users/inf/jordi
+loginShell: /bin/bash
 userPassword: {SSHA}T5jrMgpJwZZgu0azkLIVoYhiG08/KGUv
 
 dn: uid=admin,ou=usuaris,dc=gandhi,dc=reload
@@ -174,6 +179,7 @@ uid: admin
 uidNumber: 10
 gidNumber: 10
 homeDirectory: /home/users/inf/admin
+loginShell: /bin/bash
 userPassword: {SSHA}4mS0FycWc5bkpW8/a396SGNDTQUlFSX3
 
 dn: uid=user01,ou=usuaris,dc=gandhi,dc=reload
@@ -190,6 +196,7 @@ uid: user01
 uidNumber: 7001
 gidNumber: 610
 homeDirectory: /home/users/inf/1asix/user01
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user02,ou=usuaris,dc=gandhi,dc=reload
@@ -206,6 +213,7 @@ uid: user02
 uidNumber: 7002
 gidNumber: 610
 homeDirectory: /home/users/inf/1asix/user02
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user03,ou=usuaris,dc=gandhi,dc=reload
@@ -222,6 +230,7 @@ uid: user03
 uidNumber: 7003
 gidNumber: 610
 homeDirectory: /home/users/inf/1asix/user03
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user04,ou=usuaris,dc=gandhi,dc=reload
@@ -238,6 +247,7 @@ uid: user04
 uidNumber: 7004
 gidNumber: 610
 homeDirectory: /home/users/inf/1asix/user04
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user05,ou=usuaris,dc=gandhi,dc=reload
@@ -254,6 +264,7 @@ uid: user05
 uidNumber: 7005
 gidNumber: 610
 homeDirectory: /home/users/inf/1asix/user05
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user06,ou=usuaris,dc=gandhi,dc=reload
@@ -270,6 +281,7 @@ uid: user06
 uidNumber: 7006
 gidNumber: 611
 homeDirectory: /home/users/inf/2asix/user06
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user07,ou=usuaris,dc=gandhi,dc=reload
@@ -286,6 +298,7 @@ uid: user07
 uidNumber: 7007
 gidNumber: 611
 homeDirectory: /home/users/inf/2asix/user07
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user08,ou=usuaris,dc=gandhi,dc=reload
@@ -302,6 +315,7 @@ uid: user08
 uidNumber: 7008
 gidNumber: 611
 homeDirectory: /home/users/inf/2asix/user08
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user09,ou=usuaris,dc=gandhi,dc=reload
@@ -318,6 +332,7 @@ uid: user09
 uidNumber: 7009
 gidNumber: 611
 homeDirectory: /home/users/inf/2asix/user09
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 dn: uid=user10,ou=usuaris,dc=gandhi,dc=reload
@@ -334,6 +349,7 @@ uid: user10
 uidNumber: 7010
 gidNumber: 611
 homeDirectory: /home/users/inf/2asix/user10
+loginShell: /bin/bash
 userPassword: {SHA}ovf8ta/reYP/u2zj0afpHt8yE1A=
 
 # ---------- Clients ----------------------------
@@ -352,6 +368,7 @@ uid: mao
 uidNumber: 11001
 gidNumber: 650
 homeDirectory: /home/users/inf/1wiaw/mao
+loginShell: /bin/bash
 userPassword: {SHA}89F9x2P5XmKafnH54qLunfQ8h0Y=
 
 dn: uid=ho,o=asia,ou=clients,dc=gandhi,dc=reload
@@ -367,6 +384,7 @@ uid: ho
 uidNumber: 11002
 gidNumber: 650
 homeDirectory: /home/users/inf/1wiaw/ho
+loginShell: /bin/bash
 userPassword: {SHA}mnaoV605m0kroBh50PotcX5EMLI=
 
 dn: uid=hiro,o=asia,ou=clients,dc=gandhi,dc=reload
@@ -382,6 +400,7 @@ uid: hiro
 uidNumber: 11003
 gidNumber: 650
 homeDirectory: /home/users/inf/1wiaw/hiro
+loginShell: /bin/bash
 userPassword: {SHA}bylNbPKEKAirTNxHDMoNj8jHrKA=
 
 dn: uid=nelson,o=africa,ou=clients,dc=gandhi,dc=reload
@@ -398,6 +417,7 @@ uid: nelson
 uidNumber: 11004
 gidNumber: 650
 homeDirectory: /home/users/inf/1wiaw/nelson
+loginShell: /bin/bash
 userPassword: {SHA}2RX06XDlNlQgLBz1xi5gpygKghk=
 
 dn: uid=robert,o=africa,ou=clients,dc=gandhi,dc=reload
@@ -413,6 +433,7 @@ uid: robert
 uidNumber: 11005
 gidNumber: 650
 homeDirectory: /home/users/inf/1wiaw/robert
+loginShell: /bin/bash
 userPassword: {SHA}EukpPsazDH+ooJJq9CgH6SnBaE8=
 
 dn: uid=ali,o=africa,ou=clients,dc=gandhi,dc=reload
@@ -429,6 +450,7 @@ uid: ali
 uidNumber: 11006
 gidNumber: 650
 homeDirectory: /home/users/inf/1wiaw/ali
+loginShell: /bin/bash
 userPassword: {SHA}tCptk9eWkVIi9v+y/91hN9k8HNs=
 
 dn: uid=konrad,o=eu,o=europa,ou=clients,dc=gandhi,dc=reload
@@ -444,6 +466,7 @@ uid: konrad
 uidNumber: 11007
 gidNumber: 651
 homeDirectory: /home/users/inf/2wiaw/konrad
+loginShell: /bin/bash
 userPassword: {SHA}v7M/0OfTWcdI9irH59W8m7FgL6k=
 
 dn: uid=humphrey,o=eu,o=europa,ou=clients,dc=gandhi,dc=reload
@@ -459,6 +482,7 @@ uid: humphrey
 uidNumber: 11008
 gidNumber: 651
 homeDirectory: /home/users/inf/2wiaw/humphrey
+loginShell: /bin/bash
 userPassword: {SHA}6WvUsL4qewGBxPBk0xxwZq8jSFk=
 
 dn: uid=carles,o=eu,o=europa,ou=clients,dc=gandhi,dc=reload
@@ -474,6 +498,7 @@ uid: carles
 uidNumber: 11009
 gidNumber: 651
 homeDirectory: /home/users/inf/2wiaw/carles
+loginShell: /bin/bash
 userPassword: {SHA}N59JHsqofesnS/uN/hTgYniAHVc=
 
 dn: uid=francisco,o=noneu,o=europa,ou=clients,dc=gandhi,dc=reload
@@ -490,6 +515,7 @@ uid: francisco
 uidNumber: 11010
 gidNumber: 651
 homeDirectory: /home/users/inf/2wiaw/fracisco
+loginShell: /bin/bash
 userPassword: {SHA}ExWuYilEQ2eWipQ6IZ843vmoES0=
 
 dn: uid=vladimir,o=noneu,o=europa,ou=clients,dc=gandhi,dc=reload
@@ -505,6 +531,7 @@ uid: vladimir
 uidNumber: 11011
 gidNumber: 651
 homeDirectory: /home/users/inf/2wiaw/vladimir
+loginShell: /bin/bash
 userPassword: {SHA}3JGGoGB4czkVpvy6s05ZEgvitIQ=
 
 dn: uid=jorge,o=noneu,o=europa,ou=clients,dc=gandhi,dc=reload
@@ -523,6 +550,7 @@ uid: jorge
 uidNumber: 11012
 gidNumber: 651
 homeDirectory: /home/users/inf/2wiaw/jorge
+loginShell: /bin/bash
 userPassword: {SHA}M/knNE4HngDT+kXYgzsE5zUiPuw=
 
 # ---------- Grups ------------------------------

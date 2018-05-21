@@ -1,0 +1,37 @@
+LDAP 
+son las siglas de Lightweight Directory Access Protocol (en español
+Protocolo Ligero/Simplificado de Acceso a Directorios) que hacen
+referencia a un protocolo a nivel de aplicación que permite el acceso a
+un servicio de directorio ordenado y distribuido para buscar diversa
+información en un entorno de red.
+
+NFS
+El Network File System (Sistema de archivos de red), o NFS, es un
+protocolo de nivel de aplicación, según el Modelo OSI. Es utilizado para
+sistemas de archivos distribuido en un entorno de red de computadoras de
+área local.
+
+KERBEROS
+Kerberos (pronunciación en inglés: /ˈkərbərɒs/) es un protocolo de
+autenticación de redes de ordenador creado por el MIT que permite a dos
+ordenadores en una red insegura demostrar su identidad mutuamente de
+manera segura. Kerberos se basa en criptografía de clave simétrica y
+requiere un tercero de confianza.
+
+NFS  
+El sistema de nombres de dominio1​ (DNS, por sus siglas en inglés,
+Domain Name System) es un sistema de nomenclatura jerárquico
+descentralizado para dispositivos conectados a redes IP como Internet o
+una red privada. El servidor DNS utiliza una base de datos distribuida y
+jerárquica que almacena información asociada a nombres de dominio en
+redes como Internet
+
+DHCP 
+El protocolo de configuración dinámica de host (en inglés: Dynamic
+Host Configuration Protocol, también conocido por sus siglas de DHCP) es
+un servidor que usa protocolo de red de tipo cliente/servidor en el que
+generalmente un servidor posee una lista de direcciones IP dinámicas y
+las va asignando a los clientes conforme éstas van quedando libres,
+sabiendo en todo momento quién ha estado en posesión de esa IP, cuánto
+tiempo la ha tenido y a quién se la ha asignado después.
+

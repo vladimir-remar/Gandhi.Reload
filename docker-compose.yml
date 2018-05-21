@@ -35,8 +35,8 @@ services:
   #OJO cambiar el "context" segun la configuracion
   dns:
     build: 
-      context: $PWD/Documentacion/ModoAdvanced/ServerDNS_mapeo_casa/
-      #context: $PWD/Documentacion/ModoAdvanced/ServerDNS_mapeo_edt/
+      #context: $PWD/Documentacion/ModoAdvanced/ServerDNS_mapeo_casa/
+      context: $PWD/Documentacion/ModoAdvanced/ServerDNS_mapeo_edt/
       dockerfile: Dockerfile
     ports:
      - "53:53/udp"
@@ -67,7 +67,6 @@ services:
     privileged: true
     volumes:
       - homes:/mnt/dades
-      - wireshark:/opt/wireshark
 
   ###SERVICIOS KERBERIZADOS
   #SSH
@@ -101,21 +100,22 @@ services:
     privileged: true
     volumes:
       - pub:/var/ftp/pub
-  #TFTP    
-  tftp:
-    build: 
-      context: $PWD/Documentacion/ServiciosKerberizados/ServerTFTP
-      dockerfile: Dockerfile
-    ports:
-      - "69:69/udp"
-    networks: 
-      _net:
-        ipv4_address: 172.31.0.9
-    container_name: tftpserver.gandhi.reload
-    hostname: tftpserver.gandhi.reload
-    privileged: true
-    volumes:
-      - tftp:/var/lib/tftpboot
+
+  # TFTP    
+  # tftp:
+  #   build: 
+  #     context: $PWD/Documentacion/ServerPXE/ServerTFTP
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "0.0.0.0:69:69/udp"
+  #   networks: 
+  #     _net:
+  #       ipv4_address: 172.31.0.9
+  #   container_name: tftpserver.gandhi.reload
+  #   hostname: tftpserver.gandhi.reload
+  #   privileged: true
+  #   volumes:
+  #     - tftp:/var/lib/tftpboot
   #HTTP
   http_krb:
     build: 
@@ -129,6 +129,8 @@ services:
     container_name: httpserver.gandhi.reload
     hostname: httpserver.gandhi.reload
     privileged: true
+    volumes:
+      - web:/var/tmp
 
   #GADMIN
   gadmin:
@@ -148,6 +150,7 @@ services:
       - config_dhcp:/etc/dhcp
       - pub:/var/ftp/pub
       - tftp:/var/lib/tftpboot
+      - web:/var/tmp
       
 networks:
  _net:
@@ -161,3 +164,4 @@ volumes:
   config_dhcp:
   pub:
   tftp:
+  web:

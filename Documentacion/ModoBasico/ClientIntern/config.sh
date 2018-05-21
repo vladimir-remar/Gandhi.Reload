@@ -21,4 +21,4 @@ cp krb5.conf /etc/krb5.conf
 #authconfig --enableldap --enableshadow --enableldapauth --enablelocauthorize --ldapserver=ldap://serverldap/ --ldapbasedn=dc=gandhi,dc=reload --updateall &>/dev/null
 
 
-sed -i -r 's/(<.*.Volume definitions.*.)/\1\n\t\t<volume fstype="nfs" server="nfs.gandhi.reload" mountpoint="~" path="\/mnt\/dades\/%(GROUP)\/%(USER)" \/>/' /etc/security/pam_mount.conf.xml
+sed -i -r 's/(<.*.Volume definitions.*.)/\1\n\t\t<volume fstype="nfs" server="nfs.gandhi.reload" mountpoint="~\/%(USER)\/" path="\/mnt\/dades\/%(GROUP)\/%(USER)" \/>/' /etc/security/pam_mount.conf.xml
